@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body, body * {
+    font-family: "Poppins";
+    color: #11142D;
+}
+body {
+    background-color: #F7F7FC;
+}
+input:focus {
+    outline: none;
+}
+
+@media only screen and (max-width: 1024px) { /* lg */
+    .dashboard-left {flex-direction: column!important;}
+}
+
+
+
+@media only screen and (max-width: 576px) { /* sm */
+    .statistic-info {grid-template-columns: repeat(1, minmax(0, 1fr))!important;}
+    .dashboard-orderlist {width: 100%!important;}
+}
